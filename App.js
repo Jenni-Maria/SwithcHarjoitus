@@ -10,8 +10,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Jenni-Marian Switch</Text> 
         <View style={styles.fields}>
+        <Text>Jenni-Marian Switch</Text> 
           <Switch
             trackColor={{false: '#767577', true: '#79ff58'}}
             thumbColor={isEnabled ? '#79ff58' : '#f4f3f4'}
@@ -26,12 +26,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    //padding: 30,
   },
   fields: {
-    flexDirection: 'column',
-    //flexDirection:'row',
+    flexDirection:'row',
     justifyContent: 'space-between',
-    padding: 30,
+    padding: 10,
   }
 });
